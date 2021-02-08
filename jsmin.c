@@ -252,7 +252,7 @@ jsmin_action(int d, jsmin_obj *jmo)
 jsmin_obj*
 jsmin(char *javascript)
 {
-	jsmin_obj *jmo = new_jsmin_obj(javascript TSRMLS_CC);
+	jsmin_obj *jmo = new_jsmin_obj(javascript);
 
 	jsmin_action(3, jmo);
 	while (jmo->theA != 0) {
